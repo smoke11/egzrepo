@@ -5,6 +5,7 @@
     <b>Taki uzytkownik jest juz zalogowany, wybierz inny nick!</b>
     {% endif %}
     <br />
+    <b>Podaj nazwe uzytkownika:</b>
     {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
     <form action="/chat/" method="post">
     {% csrf_token %}
